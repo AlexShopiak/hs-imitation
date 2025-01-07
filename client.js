@@ -110,7 +110,7 @@ const crypto = require('crypto');
 
 		// Отримати записи по захищеному каналу 2
 		const title3 = 'nonexist';
-		logSend('запит опису книги ', title2);
+		logSend('запит опису книги ', title3);
 		const encryptedTitle3 = encryptText(title3, sessionKey);
 		const bookResponse3 = await fetch('http://localhost:4000/book', {
 			method: 'POST',
